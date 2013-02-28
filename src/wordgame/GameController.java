@@ -29,6 +29,8 @@ public class GameController {
             if (firstCard.isAMatchFor(card)) {
                 registerMatch(card.getWord());
                 playMatchAudio();
+                firstCard.playMatch();
+                card.playMatch();
                 if (isGameFinished()) {
                     endGame();
                 }
@@ -53,6 +55,7 @@ public class GameController {
     }
 
     private void endGame() {
+        
         System.out.println("Completed!");
     }
 

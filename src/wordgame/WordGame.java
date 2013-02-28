@@ -29,7 +29,7 @@ public class WordGame extends Application {
         launch(args);
     }
     private static final String[] words = new String[]{"WE", "AT", "FOR", "COME", "HERE", "HOME"};
-    private static final double HEIGHT = 40;
+    private static final double HEIGHT = 100;
     private static final double WIDTH = 100;
     private GameController controller;
     
